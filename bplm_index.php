@@ -71,7 +71,7 @@ function bplm_calculator_shortcode_view($options) {
 }
 
 //function that displays and does all the processing
-function bplm_calculator_view( $purchase = '250000', $down = '25000', $interest = '5.0', $tax = '3125', $years = '30', $echo = 1 ) {
+function bplm_calculator_view( $purchase = '250000', $down = '25000', $interest = '5.0', $tax = '3125', $years = '30', $echo = 0 ) {
 
 	//sets up/gets values for later use
 	
