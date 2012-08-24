@@ -141,7 +141,6 @@ function bplm_count_ajax() {
 	foreach ($_POST as $key => $value) {
 		$_POST[$key] = preg_replace('/[^0-9.]*/', '', $value);
 	}
-var_dump($_POST);
 	
 	if( is_numeric($_POST['purchase']) && is_numeric($_POST['down']) && is_numeric($_POST['interest']) && is_numeric($_POST['tax']) && is_numeric($_POST['years']) && is_numeric($_POST['startdate_month']) && is_numeric($_POST['startdate_year']) ) {
 		
