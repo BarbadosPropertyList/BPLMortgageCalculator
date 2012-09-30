@@ -22,8 +22,6 @@ function bplm_deactivation() {
 //Loads Javascript for users so AJAX magic can happen
 add_action( 'template_redirect', 'bplm_add_js' );
 function bplm_add_js() {
-    wp_deregister_script( 'jquery' );
-    wp_register_script( 'jquery', 'http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js');
     wp_enqueue_script( 'jquery' );
 
 	wp_enqueue_script( 'jquery_currency', plugins_url( 'js/jquery.currency.js' , __FILE__ ), array('jquery') );
